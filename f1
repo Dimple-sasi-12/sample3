@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "enter the salary"
+read salary
+
+if [ $salary -lt 10000 ];
+then
+	echo "no tax"
+elif [ $salary -gt 10000 ] && [ $salary -lt 25000 ];
+then
+	echo "5% tax included"
+else 
+	echo "10% tax included"
+fi
+
